@@ -1,0 +1,1 @@
+This repository will hopefully become a study resource for ITF TaeKwon Do practioneers.
