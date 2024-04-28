@@ -27,8 +27,8 @@ def moveCountQuiz(rank):
         patterns = patterns[:ranks.index(rank)+1]
         
     elif rank in ranks[9:13]:
-        moves = moves[:15+(3*(ranks.index(rank)-10))]
-        patterns = patterns[:15+(3*(ranks.index(rank)-10))]
+        moves = moves[:3+(3*(ranks.index(rank)-6))]
+        patterns = patterns[:3+(3*(ranks.index(rank)-6))]
         
     elif rank == ranks[13]:
         moves = moves[:23]
@@ -36,7 +36,7 @@ def moveCountQuiz(rank):
     
     while len(patterns) > 0:
         
-        i = random.randint(0, len(patterns)-1)
+        i = random.randint(len(patterns)-1)
         guess = (input(f"How many moves are in {patterns[i]}?\n"))
         
         while moves[i] != int(guess):
