@@ -1,5 +1,4 @@
 import random
-    
 
 def moveCountQuiz(rank):
     moves = []
@@ -17,11 +16,11 @@ def moveCountQuiz(rank):
                    "Sam-Il":33, "Yoo-Sin":68, "Choi-Yong":46, "Yong-Gae":49, "Ul-Ji":42, "Moon-Moo":61,
                    "So-San":72, "Se-Jong":24, "Tong-Il":56}
 
-    for i in movesInPatterns.values():
-        moves.append(i)
+    for move_count in movesInPatterns.values():
+        moves.append(move_count)
     
-    for i in movesInPatterns.keys():
-        patterns.append(i)
+    for pattern in movesInPatterns.keys():
+        patterns.append(pattern)
 
     if rank in ranks[:9]:
         moves = moves[:ranks.index(rank)+1]
